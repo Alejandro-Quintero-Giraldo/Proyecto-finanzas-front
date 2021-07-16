@@ -3,6 +3,7 @@ import { signInWithGoogle, auth } from "../functions/firebaseAuth";
 import { useHistory } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { url } from '../environment/urls';
+import { saveToLocal } from '../functions/localStorage';
 import axios from '../environment/axios';
 
 export const Login = () => {
@@ -12,7 +13,11 @@ export const Login = () => {
   const buscarUsuario = () => {
     axios.get(url.buscarUsuario(user?.uid))
       .then(res => {
-        if (res.status === 200) history.push('/home');
+        if (res.status === 200) {
+          saveToLocal('USER_PHOTO', user?.photoURL);
+          saveToLocal('USER_UID', user?.uid);
+          history.push('/home');
+        };
       }).catch((error) => {
         crearUsuario();
       });
@@ -21,7 +26,11 @@ export const Login = () => {
   const crearUsuario = () => {
     axios.post(url.crearUsuario(user?.uid, user?.displayName, user?.email))
       .then(res => {
-        if (res.status === 200) history.push('/home');
+        if (res.status === 200) {
+          saveToLocal('USER_PHOTO', user?.photoURL);
+          saveToLocal('USER_UID', user?.uid);
+          history.push('/home');
+        };
       })
   }
 

@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 17px;
+}
+
+html {
+  background-image: url(/src/images/wallpaper.png);
+  background-attachment: fixed;
 }
 
 .login {
@@ -36,7 +41,7 @@
   background-color: #f6d268;
   font-weight: bold;
   font-size: 20px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .login__button:hover {
@@ -45,5 +50,215 @@
 }
 
 .login__button i {
-  margin-right: 10px; 
+  margin-right: 10px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #f6d268;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 3px 5px 3px #00000080;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar__logo img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__actions ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar__items a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.navbar__items a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navbar__actions img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #b4932d;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+
+.navbar__actions img:hover {
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  background-color: #00000080;
+}
+
+.navbar__profile {
+  position: relative;
+}
+
+.navbar__info-user {
+  position: absolute;
+  width: 160px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
+  left: -60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.navbar__info-user--active {
+  opacity: 1;
+}
+
+.navbar__actions button {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f66868;
+  transition: 0.4s;
+}
+
+.navbar__actions button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.home__bolsillos {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2rem;
+}
+
+.bolsillo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+  width: 200px;
+  padding: 20px;
+  background-color: #f6d268;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 3px #00000080;
+}
+
+.bolsillo__container-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.bolsillo__button-edit {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8abd76;
+  transition: 0.4s;
+}
+
+.bolsillo__button-edit:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.bolsillo__button-delete {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f66868;
+  transition: 0.4s;
+}
+
+.bolsillo__button-delete:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.bolsillo__button-see {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: #68a1f6;
+  transition: 0.4s;
+}
+
+.bolsillo__button-see a {
+  color: #000000;
+  transition: 0.4s;
+}
+
+.bolsillo__button-see a:hover {
+  color: #ffffff;
+}
+
+.bolsillo__button-see:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.home__container-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home__title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.home__loading {
+  width: 400px;
+  padding: 20px;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #f6d268;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 3px #00000080;
+}
+
+.home__redirect-button {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #68a1f6;
+  transition: 0.4s;
+}
+
+.home__redirect-button:hover {
+  color: #ffffff;
+  background-color: #000000;
 }
