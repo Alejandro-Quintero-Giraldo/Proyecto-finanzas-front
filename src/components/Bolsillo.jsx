@@ -12,9 +12,7 @@ export const Bolsillo = ({ bolsillo }) => {
           bolsillo.esAhorro
             ? null
             : (
-              <button className="bolsillo__button-edit">
-                <i className="fas fa-edit"></i>
-              </button>
+              <Link to={`/editar/bolsillo/${bolsillo.id}`} className="bolsillo__button-edit"><i className="fas fa-edit"></i></Link>
             )
         }
 

@@ -14,7 +14,6 @@ export const Home = () => {
     axios.get(url.buscarBolsillos(usuarioId))
       .then((res) => {
         setBolsillos(res.data);
-        console.log(res.data);
       });
   }
 
@@ -33,19 +32,13 @@ export const Home = () => {
           ? (
             <div className="home__loading">
               <p>Estamos buscando tus bolsillos... Si la búsqueda se alarga mucho, es probable que no tengas bolsillos creados...</p>
-              <div>
-                <p>Puedes crear tu primer bolsillo dando click en el siguiente botón:</p>
-                <br />
-                <Link className="home__redirect-button">
+              <div className="home__loading-container-text">
+                <p className="home__loading-text">Puedes crear tu primer bolsillo dando click en el siguiente botón:</p>
+                <Link to="/crear/bolsillo" className="home__redirect-button">
                   Crear bolsillo
                 </Link>
               </div>
-              <br />
-              <br />
-              <br />
-              <i class="fas fa-sync fa-10x fa-spin"></i>
-              <br />
-              <br />
+              <i className="fas fa-sync fa-10x fa-spin home__loading-icon"></i>
             </div>
           )
           : null

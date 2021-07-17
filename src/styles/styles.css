@@ -23,9 +23,9 @@ html {
 .login__container {
   width: 450px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 30px;
   border-radius: 10px;
-  background-color: #e8e8e8;
+  background-color: #f6d268;
   text-align: center;
 }
 
@@ -38,14 +38,15 @@ html {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: #f6d268;
+  background-color: #ffffff;
   font-weight: bold;
   font-size: 20px;
   transition: 0.4s;
 }
 
 .login__button:hover {
-  background-color: #e0b739;
+  color: #ffffff;
+  background-color: #000000;
   cursor: pointer;
 }
 
@@ -178,6 +179,8 @@ html {
 }
 
 .bolsillo__button-edit {
+  text-decoration: none;
+  color: #000000;
   padding: 7px;
   border: none;
   border-radius: 5px;
@@ -249,7 +252,7 @@ html {
 }
 
 .home__redirect-button {
-  padding: 7px;
+  padding: 9px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -261,4 +264,74 @@ html {
 .home__redirect-button:hover {
   color: #ffffff;
   background-color: #000000;
+}
+
+.home__loading-container-text,
+.home__loading-text,
+.home__loading-icon {
+  margin-bottom: 3rem;
+}
+
+.form-bolsillo {
+  width: 100%;
+  padding: 80px;
+}
+
+.form-bolsillo__form {
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #f6d268;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-bolsillo__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-bolsillo__input input {
+  width: 95%;
+  padding: 15px;
+  outline: none;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+}
+
+.form-bolsillo__button {
+  width: 140px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8abd76;
+  font-size: 22px;
+  transition: .5s;
+}
+
+.form-bolsillo__button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.form-bolsillo__information {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #f6d268;
+  margin-top: 4rem;
+  font-size: 20px;
+}
+
+.form-bolsillo__errores {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f66868;
+  font-size: 23px;
+  margin-bottom: 2rem;
 }

@@ -33,7 +33,7 @@ export const NavBar = () => {
       </Link>
       <div className="navbar__actions">
         <ul>
-          <li className="navbar__items"><Link to="/">Crear bolsillo</Link></li>
+          <li className="navbar__items"><Link to="/crear/bolsillo">Crear bolsillo</Link></li>
           <li className="navbar__items"><Link to="/">Usuarios</Link></li>
         </ul>
         <div className="navbar__profile">
