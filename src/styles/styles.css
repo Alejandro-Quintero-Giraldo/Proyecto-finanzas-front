@@ -335,3 +335,102 @@ html {
   font-size: 23px;
   margin-bottom: 2rem;
 }
+
+.usuario {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background-color: #f6d268;
+  border-radius: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.usuario div {
+  text-align: center;
+}
+
+.usuarios__container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  padding: 50px;
+}
+
+.detail-bolsillo__bolsillo {
+  margin: 40px 150px;
+  border-radius: 10px;
+  background-color: #f6d268;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-bolsillo__button {
+  width: 250px;
+  display: block;
+  padding: 9px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #68a1f6;
+  transition: 0.4s;
+}
+
+.detail-bolsillo__button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.detail-bolsillo__container-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-bolsillo__title {
+  font-size: 28px;
+}
+
+.details-bolsillo__container-bolsillo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-bolsillo__info {
+  margin: 40px 150px;
+  border-radius: 10px;
+  background-color: #f6d268;
+  padding: 30px;
+}
+
+.detail-bolsillos__movimientos {
+  margin: 40px 150px;
+  border-radius: 10px;
+  background-color: #f6d268;
+  padding: 30px;
+}
+
+.movimiento {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: #a7a7a7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.detail-bolsillo__container-movimientos {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2rem;
+}
+.movimiento i {
+  margin-right: 10px;
+}

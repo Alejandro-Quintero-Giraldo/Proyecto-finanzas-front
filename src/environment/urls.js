@@ -5,4 +5,11 @@ export const url = {
   buscarUsuario: (usuarioId) => `mostrarUsuario/${usuarioId}`,
   buscarBolsillos: (usuarioId) => `mostrarBolsilloUid/${usuarioId}`,
   buscarBolsillo: (bolsilloId) => `mostrarBolsillo/${bolsilloId}`,
+  eliminarBolsillo: (bolsilloId) => `eliminarBolsillo/${bolsilloId}`,
+  ingresarSaldo: (movimientoId, saldo, bolsilloId, usuarioId) => `ingresarDinero/${movimientoId}/${saldo}/${bolsilloId}/${usuarioId}`,
+  sacarDinero: (movimientoId, saldo, bolsilloId, usuarioId) => `sacarDinero/${movimientoId}/${saldo}/${bolsilloId}/${usuarioId}`,
+  ingresosMensuales: (bolsilloId, mes, año) => `ingresosMensuales/${bolsilloId}/${mes}/${año}`,
+  egresosMensuales: (bolsilloId, mes, año) => `egresosMensuales/${bolsilloId}/${mes}/${año}`,
+  buscarMovimientos: (bolsilloId) => `mostrarMovimientos/${bolsilloId}`,
+  buscarUsuarios: `mostrarUsuarios`,
 }

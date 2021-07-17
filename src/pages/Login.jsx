@@ -42,10 +42,9 @@ export const Login = () => {
     <div className="login">
       <div className="login__container">
         <p className="login__text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae,
-          quidem! Vero officiis dolores aspernatur asperiores nobis, quod beatae
-          excepturi, blanditiis soluta facilis at. Minima quibusdam porro
-          corporis commodi at vitae!
+          ¡Bienvenido a Top Finances!
+          Una aplicación web que te ayuda a realizar una práctica de distribución de finanzas,  y ahorro.
+          Para acceder a nuestras funcionalidades, inicia sesión con tu cuenta de Google.
         </p>
         <button className="login__button" onClick={signInWithGoogle}>
           <i className="fab fa-google"></i>

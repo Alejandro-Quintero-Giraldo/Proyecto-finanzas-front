@@ -44,7 +44,7 @@ export const Home = () => {
           : null
       }
       <div className="home__bolsillos">
-        {bolsillos && bolsillos?.map((bolsillo) => (
+        {bolsillos?.map((bolsillo) => (
           <Bolsillo key={bolsillo.id} bolsillo={bolsillo} />
         ))}
       </div>

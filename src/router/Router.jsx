@@ -5,6 +5,7 @@ import { Login } from '../pages/Login';
 import { Bolsillo } from '../pages/Bolsillo';
 import { CrearBolsillo } from '../pages/CrearBolsillo';
 import { EditarBolsillo } from '../pages/EditarBolsillo';
+import { Usuarios } from '../pages/Usuarios';
 
 export const Router = () => {
 
@@ -13,9 +14,10 @@ export const Router = () => {
       <Switch>
         <Route exact path='/' component={Login} />
         <Route path='/home' component={Home} />
+        <Route path='/usuarios' component={Usuarios} />
         <Route path='/crear/bolsillo' component={CrearBolsillo} />
         <Route path='/editar/bolsillo/:bolsilloId' component={EditarBolsillo} />
-        <Route path='/bolsillo/:id' component={Bolsillo} />
+        <Route path='/bolsillo/:bolsilloId' component={Bolsillo} />
       </Switch>
     </BrowserRouter>
   );

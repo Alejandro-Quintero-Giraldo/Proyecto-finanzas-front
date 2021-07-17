@@ -33,8 +33,9 @@ export const NavBar = () => {
       </Link>
       <div className="navbar__actions">
         <ul>
+          <li className="navbar__items"><Link to="/home">Inicio</Link></li>
           <li className="navbar__items"><Link to="/crear/bolsillo">Crear bolsillo</Link></li>
-          <li className="navbar__items"><Link to="/">Usuarios</Link></li>
+          <li className="navbar__items"><Link to="/usuarios">Usuarios</Link></li>
         </ul>
         <div className="navbar__profile">
           <img src={usuarioForo} alt="userPhoto" onClick={() => {
